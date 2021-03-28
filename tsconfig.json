@@ -24,7 +24,7 @@
       "@services/*": ["./src/services/*"],
       "@entities/*": ["./src/entities/*"],
       "@apis/*": ["./src/apis/*"],
-      "@libs/*": ["./src/libs/*"],
+      "@libraries/*": ["./src/libraries/*"],
       "@configs/*": ["./src/configs/*"]
     }
   }
