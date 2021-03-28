@@ -1,0 +1,15 @@
+{
+  "name": "my-node-boilerplate",
+  "version": "1.0.0",
+  "main": "src/index.ts",
+  "repository": "git@github.com:gabrieldissotti/my-node-boilerplate.git",
+  "author": "Gabriel Dissotti <gabrieldnrodrigues@gmail.com>",
+  "license": "Apache 2.0",
+  "scripts": {
+    "dev": "ts-node-dev --respawn --transpile-only --ignore-watch node_modules --no-notify src/server.ts"
+  },
+  "devDependencies": {
+    "ts-node-dev": "^1.1.6",
+    "typescript": "^4.2.3"
+  }
+}

@@ -1,1 +1,1 @@
-# my-node-boilerplate
+# My Node Boilerplate
