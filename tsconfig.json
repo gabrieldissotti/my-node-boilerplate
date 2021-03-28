@@ -1,31 +1,48 @@
 {
   "compilerOptions": {
-    "target": "es2017",     
+    "target": "es2017",
     "module": "commonjs",
-    "lib": ["es6"],        
-    "allowJs": true,  
-    "outDir": "./dist",   
-    "rootDir": "./src",  
-    "removeComments": true,                      
-    "strict": true,      
+    "lib": [
+      "es6"
+    ],
+    "allowJs": true,
+    "outDir": "./dist",
+    "rootDir": "./src",
+    "removeComments": true,
+    "strict": true,
     "typeRoots": [
-        "./node_modules/@types",
-        "./src/@types"
-      ],  
-    "esModuleInterop": true,                        
-    "experimentalDecorators": true,              
-    "emitDecoratorMetadata": true,               
+      "./node_modules/@types",
+      "./src/@types"
+    ],
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
     "skipLibCheck": true,
-    "forceConsistentCasingInFileNames": true,        
+    "forceConsistentCasingInFileNames": true,
     "resolveJsonModule": true,
     "baseUrl": ".",
     "paths": {
-      "@repositories/*": ["./src/repositories/*"],
-      "@services/*": ["./src/services/*"],
-      "@entities/*": ["./src/entities/*"],
-      "@apis/*": ["./src/apis/*"],
-      "@libraries/*": ["./src/libraries/*"],
-      "@configs/*": ["./src/configs/*"]
+      "@repositories/*": [
+        "./src/repositories/*"
+      ],
+      "@services/*": [
+        "./src/services/*"
+      ],
+      "@entities/*": [
+        "./src/entities/*"
+      ],
+      "@apis/*": [
+        "./src/apis/*"
+      ],
+      "@libraries/*": [
+        "./src/libraries/*"
+      ],
+      "@configs/*": [
+        "./src/configs/*"
+      ]
     }
-  }
+  },
+  "include": [
+    "src/**/*"
+  ]
 }
