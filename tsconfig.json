@@ -39,7 +39,13 @@
       ],
       "@configs/*": [
         "./src/configs/*"
-      ]
+      ],
+      "@utils/*": [
+        "./src/utils/*"
+      ],
+      "@declarations/*": [
+        "./src/declarations/*"
+      ],
     }
   },
   "include": [
