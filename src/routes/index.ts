@@ -1,7 +1,6 @@
 import { Router } from 'express'
 
-const routes = Router();
-
+const routes = Router()
 
 routes.get('/', function (req, res) {
   res.json({
@@ -25,4 +24,4 @@ routes.delete('/resource', function (req, res) {
   res.send('Hello World DELETE')
 })
 
-export default routes;
+export default routes
