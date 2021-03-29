@@ -43,8 +43,8 @@
       "@utils/*": [
         "./src/utils/*"
       ],
-      "@declarations/*": [
-        "./src/declarations/*"
+      "@interfaces/*": [
+        "./src/interfaces/*"
       ],
     }
   },

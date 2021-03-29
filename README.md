@@ -33,7 +33,6 @@ test('it should be ok', () => {
 })
 ```
 
-
 Paths:
 You can change paths like '@repositories' in file `tsconfig.json`
 import from any directory of project with '@repositories/myFile'
@@ -43,3 +42,4 @@ next steps:
 
 explain how to setup this boilerplate (change project name in package.json ect)
 explain project structure
+add logger lib by default
