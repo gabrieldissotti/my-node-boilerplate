@@ -18,7 +18,11 @@ setup:
      "source.fixAll.eslint": true
    }
  },
+
 ```
+
+-changes in package.json
+change license
 
 creating tests:
 - into `src/__tests__/unit`  create a  ExampleService.spec.ts to put into unit tests about ExampleService, if you want to create integration tests (to call an api for example), create a file into `src/__tests__/integration`.
