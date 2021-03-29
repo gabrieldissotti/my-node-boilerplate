@@ -1,0 +1,35 @@
+service: my-node-boilerplate
+
+provider:
+  name: aws
+  runtime: nodejs14.x
+  stage: v1
+  region: us-east-1
+  timeout: 30
+  memorySize: 128
+  lambdaHashingVersion: 20201221
+
+functions:
+  app:
+    handler: dist/index.run
+    events:
+      - http:
+          path: /resource/{aParameter}
+          method: GET
+      - http:
+          path: /resource
+          method: POST
+      - http:
+          path: /resource
+          method: PUT
+      - http:
+          path: /resource
+          method: PATCH
+      - http:
+          path: /resource
+          method: DELETE
+
+
+plugins:
+  - serverless-offline
+

@@ -8,7 +8,8 @@
   "scripts": {
     "dev": "ts-node-dev -r tsconfig-paths/register --respawn --transpile-only --ignore-watch node_modules --no-notify src/index.ts",
     "test": "jest",
-    "start": "node ./dist/index.js",
+    "start": "yarn build && node ./dist/index.js",
+    "start:serverless": "yarn build && yarn serverless invoke local --function app",
     "build": "babel src --extensions \".js,.ts\" --out-dir dist --copy-files --no-copy-ignored"
   },
   "devDependencies": {
@@ -17,6 +18,7 @@
     "@babel/node": "^7.13.13",
     "@babel/preset-env": "^7.13.12",
     "@babel/preset-typescript": "^7.13.0",
+    "@types/express": "^4.17.11",
     "@types/jest": "^26.0.22",
     "@types/winston": "^2.4.4",
     "@typescript-eslint/eslint-plugin": "^4.19.0",
@@ -28,12 +30,17 @@
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^4.2.1",
     "jest": "^26.6.3",
+    "serverless": "^2.31.0",
+    "serverless-offline": "^6.9.0",
     "ts-jest": "^26.5.4",
     "ts-node-dev": "^1.1.6",
     "tsconfig-paths": "^3.9.0",
     "typescript": "^4.2.3"
   },
   "dependencies": {
-    "winston": "^3.3.3"
+    "winston": "^3.3.3",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "serverless-http": "^2.7.0"
   }
 }

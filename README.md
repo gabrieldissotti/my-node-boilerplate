@@ -47,3 +47,7 @@ next steps:
 explain how to setup this boilerplate (change project name in package.json ect)
 explain project structure
 add logger lib by default
+
+## lambda aws function
+raodando localmente:
+copie o arquivo .env.example para .env
