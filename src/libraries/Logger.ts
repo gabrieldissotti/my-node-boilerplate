@@ -5,7 +5,8 @@ class Logger {
 
   constructor () {
     this.winston = winston.createLogger({
-      format: winston.format.json(),
+      format:
+        winston.format.json(),
       transports: [
         new winston.transports.Console()
       ]
