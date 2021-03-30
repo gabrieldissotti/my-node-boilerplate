@@ -15,7 +15,9 @@ export default (error: HttpException, request: Request, response: Response, next
   const { status, message, stack } = error
   const likelyLocation = getLikelyLocationFromError(error)
 
-  Logger.error(`HttpException ${status}, ${message}, thrown at ${likelyLocation}`)
+  const logger = new Logger(request.id)
+
+  logger.error(`HttpException ${status}, ${message}, thrown at ${likelyLocation}`)
 
   return response.status(status).json({
     status,

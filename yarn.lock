@@ -1875,14 +1875,7 @@
   dependencies:
     "@types/node" "*"
 
-"@types/express-request-id@^1.4.1":
-  version "1.4.1"
-  resolved "https://registry.yarnpkg.com/@types/express-request-id/-/express-request-id-1.4.1.tgz#35988cbd21b3951b74235a0c840c2a72722c85d1"
-  integrity sha512-39g9HGiBJBjsSJZ80vYgkR4yvu7XVL2R/R/KezU/060gnW5e9btRP7d0R8QORzJ3/Uo7Sis36AM58KSQQOfgcw==
-  dependencies:
-    "@types/express-serve-static-core" "*"
-
-"@types/express-serve-static-core@*", "@types/express-serve-static-core@^4.17.18":
+"@types/express-serve-static-core@^4.17.18":
   version "4.17.19"
   resolved "https://registry.yarnpkg.com/@types/express-serve-static-core/-/express-serve-static-core-4.17.19.tgz#00acfc1632e729acac4f1530e9e16f6dd1508a1d"
   integrity sha512-DJOSHzX7pCiSElWaGR8kCprwibCB/3yW6vcT8VG3P0SJjnv19gnWG/AZMfM60Xj/YJIp/YCaDHyvzsFVeniARA==
@@ -2058,6 +2051,11 @@
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/@types/tough-cookie/-/tough-cookie-4.0.0.tgz#fef1904e4668b6e5ecee60c52cc6a078ffa6697d"
   integrity sha512-I99sngh224D0M7XgW1s120zxCt3VYQ3IQsuw3P3jbq5GG4yc79+ZjyKznyOGIQrflfylLgcfekeZW/vk0yng6A==
+
+"@types/uuid@^8.3.0":
+  version "8.3.0"
+  resolved "https://registry.yarnpkg.com/@types/uuid/-/uuid-8.3.0.tgz#215c231dff736d5ba92410e6d602050cce7e273f"
+  integrity sha512-eQ9qFW/fhfGJF8WKHGEHZEyVWfZxrT+6CLIJGBcZPfxUh/+BnEj+UCGYMlr9qZuX/2AltsvwrGqp0LhEW8D0zQ==
 
 "@types/winston@^2.4.4":
   version "2.4.4"
@@ -4376,13 +4374,6 @@ expect@^26.6.2:
     jest-matcher-utils "^26.6.2"
     jest-message-util "^26.6.2"
     jest-regex-util "^26.0.0"
-
-express-request-id@^1.4.1:
-  version "1.4.1"
-  resolved "https://registry.yarnpkg.com/express-request-id/-/express-request-id-1.4.1.tgz#66feaf1f0be3deca13f3abfe1c098e49b12f2c28"
-  integrity sha512-qpxK6XhDYtdx9FvxwCHkUeZVWtkGbWR87hBAzGECfwYF/QQCPXEwwB2/9NGkOR1tT7/aLs9mma3CT0vjSzuZVw==
-  dependencies:
-    uuid "^3.3.2"
 
 express@^4.17.1:
   version "4.17.1"
