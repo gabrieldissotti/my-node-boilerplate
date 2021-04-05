@@ -48,6 +48,9 @@
       ],
       "@interfaces/*": [
         "./src/interfaces/*"
+      ],
+      "@controllers/*": [
+        "./src/controllers/*"
       ]
     }
   },
