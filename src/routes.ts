@@ -2,26 +2,8 @@ import { Router } from 'express'
 
 const routes = Router()
 
-routes.get('/', function (req, res) {
-  res.json({
-    status: 'API is OK'
-  })
-})
+import examplesRouter from '@modules/examples/examples.routes';
 
-routes.get('/resource/:id', function (req, res) {
-  res.send('Hello World GET')
-})
-routes.post('/resource', function (req, res) {
-  res.send('Hello World POST')
-})
-routes.put('/resource', function (req, res) {
-  res.send('Hello World PUT')
-})
-routes.patch('/resource', function (req, res) {
-  res.send('Hello World PATCH')
-})
-routes.delete('/resource', function (req, res) {
-  res.send('Hello World DELETE')
-})
+routes.use('/examples', examplesRouter);
 
 export default routes

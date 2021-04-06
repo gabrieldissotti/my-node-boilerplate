@@ -5,8 +5,12 @@ class HttpException extends Error {
   constructor (status: number, message: string) {
     super(message)
 
+    const customOrDefaultMessage = message || 'Internal Server Error';
+
+    const isObject = typeof message === 'object'
+
     this.status = status || 500
-    this.message = message || 'Internal Server Error'
+    this.message = isObject ? JSON.stringify(message) : customOrDefaultMessage
   }
 }
 

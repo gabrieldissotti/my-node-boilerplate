@@ -22,20 +22,17 @@
     "resolveJsonModule": true,
     "baseUrl": ".",
     "paths": {
-      "@repositories/*": [
-        "./src/repositories/*"
-      ],
-      "@services/*": [
-        "./src/services/*"
-      ],
-      "@entities/*": [
-        "./src/entities/*"
-      ],
       "@apis/*": [
         "./src/apis/*"
       ],
+      "@modules/*": [
+        "./src/modules/*"
+      ],
       "@libraries/*": [
         "./src/libraries/*"
+      ],
+      "@middlewares/*": [
+        "./src/middlewares/*"
       ],
       "@configs/*": [
         "./src/configs/*"
@@ -43,14 +40,8 @@
       "@utils/*": [
         "./src/utils/*"
       ],
-      "@middlewares/*": [
-        "./src/middlewares/*"
-      ],
       "@interfaces/*": [
         "./src/interfaces/*"
-      ],
-      "@controllers/*": [
-        "./src/controllers/*"
       ]
     }
   },

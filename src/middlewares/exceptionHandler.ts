@@ -13,6 +13,7 @@ type ExceptionHandlerResponse = {
 
 export default (error: HttpException, request: Request, response: Response, next: NextFunction): Response<ExceptionHandlerResponse> => {
   const { status, message, stack } = error
+
   const likelyLocation = getLikelyLocationFromError(error)
 
   const logger = new Logger(request.id)

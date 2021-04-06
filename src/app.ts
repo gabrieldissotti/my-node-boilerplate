@@ -6,6 +6,8 @@ import exceptionHandler from '@middlewares/exceptionHandler'
 
 const app = express()
 
+app.use(express.json());
+
 app.use(assignRequestId)
 
 app.use(routes)
