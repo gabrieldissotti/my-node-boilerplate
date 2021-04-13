@@ -2,8 +2,7 @@ node_modules
 
 .env
 
-dist/*
-!dist/.gitKeep
+dist/
 
 yarn-error.log
 
