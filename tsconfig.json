@@ -31,9 +31,6 @@
       "@entities/*": [
         "./src/entities/*"
       ],
-      "@apis/*": [
-        "./src/apis/*"
-      ],
       "@libraries/*": [
         "./src/libraries/*"
       ],
