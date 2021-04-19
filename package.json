@@ -5,6 +5,18 @@
   "repository": "git@github.com:gabrieldissotti/my-node-boilerplate.git",
   "author": "Gabriel Dissotti <gabrieldnrodrigues@gmail.com>",
   "license": "Apache 2.0",
+  "husky": {
+    "hooks": {
+      "pre-commit": "echo 'test'"
+    }
+  },
+  "lint-staged": {
+    "src/**/*.ts": [
+      "eslint 'src/**' --fix",
+      "yarn test",
+      "git add"
+    ]
+  },
   "scripts": {
     "dev": "ts-node-dev -r tsconfig-paths/register --respawn --transpile-only --ignore-watch node_modules --no-notify src/index.ts",
     "test": "jest",
@@ -38,17 +50,5 @@
   },
   "dependencies": {
     "winston": "^3.3.3"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "echo 'test'"
-    }
-  },
-  "lint-staged": {
-    "src/**/*.ts": [
-      "eslint 'src/**' --fix",
-      "yarn test",
-      "git add"
-    ]
   }
 }
