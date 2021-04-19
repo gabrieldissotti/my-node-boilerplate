@@ -14,8 +14,7 @@
     "postinstall": "husky install",
     "husky:prepare": "yarn husky add .husky/pre-commit \"yarn lint-staged\"",
     "dev": "ts-node-dev -r tsconfig-paths/register --respawn --transpile-only --ignore-watch node_modules --no-notify src/index.ts",
-    "test": "jest",
-    "test:staged": "jest",
+    "test": "jest --verbose ./__tests__",
     "start": "node ./dist/index.js",
     "build": "babel src --extensions \".js,.ts\" --out-dir dist --copy-files --no-copy-ignored",
     "lint-staged": "lint-staged"
