@@ -19,7 +19,7 @@
   },
   "scripts": {
     "postinstall": "husky install",
-    "husky:prepare": "yarn husky add .husky/pre-commit \"lint-staged\"",
+    "husky:prepare": "yarn husky add .husky/pre-commit \"yarn lint-staged\"",
     "dev": "ts-node-dev -r tsconfig-paths/register --respawn --transpile-only --ignore-watch node_modules --no-notify src/index.ts",
     "test": "jest",
     "test:staged": "jest",
