@@ -38,17 +38,5 @@
   },
   "dependencies": {
     "winston": "^3.3.3"
-  },
-  "lint-staged": {
-    "src /**/*.ts": [
-      "eslint --fix",
-      "yarn test",
-      "git add"
-    ]
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
   }
 }
