@@ -18,6 +18,7 @@
     ]
   },
   "scripts": {
+    "postinstall": "husky install",
     "dev": "ts-node-dev -r tsconfig-paths/register --respawn --transpile-only --ignore-watch node_modules --no-notify src/index.ts",
     "test": "jest",
     "test:staged": "jest",
