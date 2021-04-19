@@ -12,7 +12,7 @@ class Logger {
     })
   }
 
-  info (message: string): void {
+  info (message): void {
     this.winston.info(message)
   }
 
