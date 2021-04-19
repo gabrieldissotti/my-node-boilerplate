@@ -38,5 +38,17 @@
   },
   "dependencies": {
     "winston": "^3.3.3"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "echo 'test'"
+    }
+  },
+  "lint-staged": {
+    "src/**/*.ts": [
+      "eslint 'src/**' --fix",
+      "yarn test",
+      "git add"
+    ]
   }
 }
