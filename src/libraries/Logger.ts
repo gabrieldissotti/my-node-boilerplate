@@ -16,7 +16,7 @@ class Logger {
     this.winston.info(message)
   }
 
-  error (message: string): void {
+  error (message): void {
     this.winston.error(message)
   }
 }
